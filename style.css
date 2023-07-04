@@ -1,0 +1,169 @@
+html {
+  font-size: 16px;          /*para cuando se cambnie el tamaño del texto*/
+  box-sizing: border-box;   /*cambia el tamaño de la caja, para que el manejo de la caja sea hacia adentro */
+}
+
+*,   /* selector universal para que todos los elementos herede box-sizing*/
+*::before,   /*todos los seudoelementos hereden box-sizing*/
+*::after {  /*todos los seudoelementos hereden box-sizing*/
+  box-sizing: inherit;
+}
+
+body {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 1rem;   /*16 pix*/
+    line-height: 1.5; /* interlineado */
+    margin: 0;    /*sin margen a la izq*/
+  }
+
+  a {
+    text-decoration: none
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'PT Sans Narrow', sans-serif;
+  }
+
+  img {
+    max-width: 70%;
+    height: auto;
+  }
+
+  .img01  {
+    position: relative;
+    margin-top: 50px;
+    width: 600;
+    height: 600;
+    display: inline-block;
+    text-align: center;
+  }
+
+  .imgblog  {
+    width: 500;
+    height: 200;
+    align-content: center;
+  }
+
+  .centrado{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: rgb(238, 255, 7);
+    font-size: 4em;
+    transform: translate(-50%, -50%);
+}
+
+/* ----------HEADER -----*/
+
+.header .container  {
+    height : 150px;  /* altura */
+    display: flex;
+    flex-direction: column;  /*que el flujo quede como columnas*/
+    justify-content: center;
+    align-items: center    /*items alineados en el centro */
+
+    /*flex-direction: column;*/
+}
+
+.logo {
+    display: flex; /* para que texto quede al lado del logo */
+    align-items: center; /* el logo queda centrado respecto al texto*/
+    gap: 1rem;  /* espacio entre el logo y el texto */
+    justify-content: center;
+}
+
+.logo-img {
+    width: 50px;
+    height: 50px;
+    /*margin-left: 50px;       */   
+}
+
+.container {
+  margin-top: 60px;
+}
+
+.logo-texto {
+    /*display: flex; */
+    color: rgb(3, 109, 109);
+    font-weight: 700;
+    font-size: 4em;
+    
+}
+
+.menu   {
+    display: flex; /* para que texto quede al lado del logo */
+    font-family: 'Amatic SC', cursive;
+    font-weight: 700;
+    font-size: 2em;
+    /*margin-left: 500px;    */
+    gap: 5rem;
+    justify-content: center;
+}
+
+/*     HERO    -----    */
+
+.hero {
+    border: 5px solid rgb(3, 163, 29);
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    background-image: url('/img/img01.jpg');
+}
+
+.hero-title {
+  margin-left: 50px;
+  font-weight: 700;
+}
+
+.main {
+  margin-left: 100px;
+  margin-right: 100px
+}
+
+.contenedor-persona {
+  display: flex;
+  font-weight: 700;
+  align-items: center;
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgba(2, 116, 124, 0.678);
+  border-radius: 8px;
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.226);
+}
+
+.titulo {
+  margin-left: 50px;
+  margin-top: 40px;
+  font-weight: 700;
+  color: rgb(25, 111, 122);
+}
+
+.contenedor-prog  {
+  margin-left: 50px;
+  margin-bottom: 50px;
+  margin-top: 10px;
+  font-weight: 700;
+  color: rgb(9, 30, 53);
+}
+
+.contenido-texto  {
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 1.2em;
+
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;  /*que el flujo quede como columnas*/
+  background-color: rgb(2, 63, 63);
+  font-size: 1.5rem;   /*16 pix*/
+  height : 100px;  /* altura */
+  justify-content: center;
+  align-items: center
+  /*max-width: 1200px;*/
+
+}
+
+.f-01 {
+  color: rgb(6, 207, 221);
+
+}
